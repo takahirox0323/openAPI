@@ -1,0 +1,10 @@
+node_modules
+dist
+yarn-error.log
+.idea
+config.ts
+
+build/
+dist/
+node_modules/
+.secret-*
