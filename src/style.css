@@ -28,7 +28,7 @@ body {
     "游ゴシック体 Medium", "sans-serif", "Noto Sans CJK JP";
   color: "#000000DE";
   -webkit-text-size-adjust: 89%;
-  min-width: 1080px;
+  background: "#EBF0F9";
 }
 
 body::-webkit-scrollbar {

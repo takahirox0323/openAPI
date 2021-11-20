@@ -5,14 +5,6 @@
 yarn
 ```
 
-## 環境変数のコピー
-
-config.local.ts を config.ts にコピー
-
-```
-cp config.local.ts config.ts
-```
-
 ### ローカルサーバ起動（watch あり）
 
 ```
