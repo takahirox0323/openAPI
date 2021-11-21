@@ -19,14 +19,9 @@ import {
   ThemeProvider,
 } from "@mui/material";
 
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+
 import Container from "@mui/material/Container";
 
 import Paper from "@mui/material/Paper";
@@ -38,14 +33,6 @@ import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import EditIcon from "@mui/icons-material/Edit";
 
 import Dialog from "@mui/material/Dialog";
@@ -55,6 +42,9 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import { ButtonAppBar } from "@/components/MaterialUI/organizm/Header";
+import { BasicCard } from "@/components/MaterialUI/Molecules/BasicCard";
+import { SimpleAccordion } from "@/components/MaterialUI/Molecules/Accordion";
 
 export const Material: React.FC = () => {
   const history = useHistory();
@@ -194,6 +184,8 @@ export const Material: React.FC = () => {
                 sx={{ marginBottom: 3 }}
               >
                 <SimpleAccordion />
+                <SimpleAccordion />
+                <SimpleAccordion />
               </Container>
             </Container>
           </Box>
@@ -253,75 +245,6 @@ function SwipeableTemporaryDrawer(props) {
         {list()}
       </SwipeableDrawer>
     </div>
-  );
-}
-
-function ButtonAppBar(props) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const isMenuOpen = Boolean(anchorEl);
-
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-  const menuId = "primary-search-account-menu";
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
-  return (
-    <Box>
-      <AppBar position="fixed">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            onClick={() => props.onChangeModal()}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            materialUI
-          </Typography>
-          <Stack direction="row" spacing={2.5} alignItems="center">
-            <Badge badgeContent={4} color={"warning"} sx={{ marginTop: 0.5 }}>
-              <MailIcon color="secondary" />
-            </Badge>
-            <AccountCircleIcon onClick={handleProfileMenuOpen} />
-          </Stack>
-        </Toolbar>
-      </AppBar>
-      {renderMenu}
-    </Box>
   );
 }
 
@@ -386,78 +309,6 @@ function StickyHeadTable() {
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
     </Paper>
-  );
-}
-
-function BasicCard() {
-  return (
-    <Card sx={{ flex: 1 }}>
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
-        </Typography>
-        <Typography variant="h5" component="div">
-          benevolent
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
-        </Typography>
-        <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  );
-}
-
-function SimpleAccordion() {
-  return (
-    <div>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography>Accordion 2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion disabled>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3a-content"
-          id="panel3a-header"
-        >
-          <Typography>Disabled Accordion</Typography>
-        </AccordionSummary>
-      </Accordion>
-    </div>
   );
 }
 

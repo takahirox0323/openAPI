@@ -105,55 +105,6 @@ export const DND: React.FC = () => {
               }}
             >
               <DragList />
-              {/* <DragDropContext onDragEnd={handleOnDragEnd}>
-                <Droppable droppableId="characters">
-                  {(provided) => (
-                    <ul
-                      className="characters"
-                      {...provided.droppableProps}
-                      ref={provided.innerRef}
-                    >
-                      {characters.map(({ id, name }, index) => {
-                        return (
-                          <Draggable
-                            key={id + 5}
-                            draggableId={id + 5}
-                            index={index + 5}
-                          >
-                            {(provided) => (
-                              <li
-                                style={{ width: "400px" }}
-                                ref={provided.innerRef}
-                                {...provided.draggableProps}
-                                {...provided.dragHandleProps}
-                              >
-                                <BasicCard />
-                              </li>
-                            )}
-                          </Draggable>
-                        );
-                      })}
-                      {characters.map(({ id, name }, index) => {
-                        return (
-                          <Draggable key={id} draggableId={id} index={index}>
-                            {(provided) => (
-                              <li
-                                style={{ width: "400px" }}
-                                ref={provided.innerRef}
-                                {...provided.draggableProps}
-                                {...provided.dragHandleProps}
-                              >
-                                <BasicCard />
-                              </li>
-                            )}
-                          </Draggable>
-                        );
-                      })}
-                      {provided.placeholder}
-                    </ul>
-                  )}
-                </Droppable>
-              </DragDropContext> */}
             </Container>
           </Box>
         </Box>
