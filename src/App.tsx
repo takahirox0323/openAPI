@@ -7,6 +7,7 @@ import { Material } from "./pages/Material";
 import { BluePrint } from "./pages/BluePrint";
 import { ReactBootstrap } from "./pages/ReactBootstrap";
 import { Tailwind } from "./pages/Tailwind";
+import { DND } from "./pages/dnd";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route exact path="/bluePrint" component={BluePrint} />
         <Route exact path="/tailwind" component={Tailwind} />
         <Route exact path="/Login" component={Login} />
+        <Route exact path="/dnd" component={DND} />
       </Switch>
     </BrowserRouter>
   );

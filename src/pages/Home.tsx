@@ -10,6 +10,7 @@ export const Home: React.FC = () => {
       <h1 onClick={() => history.push("/reactBootstrap")}>React Bootstrap</h1>
       <h1 onClick={() => history.push("/chakra")}>Chakra UI</h1>
       <h1 onClick={() => history.push("/bluePrint")}>BluePrint</h1>
+      <h1 onClick={() => history.push("/dnd")}>DND</h1>
       <h1 onClick={() => history.push("/Chakra")}>fdasfdsfsd</h1>
     </>
   );
