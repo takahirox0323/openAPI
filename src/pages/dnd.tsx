@@ -9,7 +9,6 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import {
-  Alert,
   Badge,
   createTheme,
   Grid,
@@ -28,9 +27,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import { BasicCard } from "@/components/MaterialUI/Molecules/BasicCard";
-
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import DragList from "@/components/MaterialUI/organizm/Borad/Borad";
 
 const testTheme = createTheme({
@@ -68,7 +64,6 @@ const finalSpaceCharacters = [
 ];
 
 export const DND: React.FC = () => {
-  const history = useHistory();
   const [isOpen, setClose] = React.useState(false);
   const [isDialogOpen, setDialogOpen] = React.useState(false);
   const [characters, updateCharacters] = useState(finalSpaceCharacters);

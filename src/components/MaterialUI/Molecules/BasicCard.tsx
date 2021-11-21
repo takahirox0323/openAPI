@@ -4,7 +4,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { Rating, Stack, ThemeProvider } from "@mui/material";
+import { Rating } from "@mui/material";
 
 export const BasicCard = () => {
   return (
