@@ -9,24 +9,18 @@ https://user-images.githubusercontent.com/77603909/142760871-215b4439-a480-4af7-
 - Chakra UI
 
 # Installation
-
 ```
 yarn
 ```
 
 # start server 
 ```
-
-
-
-
 yarn dev
 ```
 → http://localhost:8000
 
 
 ## build
-
 ```
 yarn build
 ```
