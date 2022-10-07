@@ -46,7 +46,7 @@ export const Material: React.FC = () => {
             <Container
               maxWidth={false}
               sx={{
-                margin: "74px 0 20px",
+                margin: "90px 0 30px",
                 marginTop: 12,
                 display: "flex",
                 flexDirection: "column",
@@ -63,9 +63,7 @@ export const Material: React.FC = () => {
               >
                 <Stack direction="row" spacing={2}>
                   <Tooltip title="登録">
-                    <Button variant="contained" onClick={handleDialogModal}>
-                      登録する
-                    </Button>
+                    <Button onClick={handleDialogModal}>登録する</Button>
                   </Tooltip>
                   <Tooltip title="編集">
                     <Button
