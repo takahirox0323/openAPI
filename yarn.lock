@@ -13870,34 +13870,34 @@ reg-gh-app-interface@^1.2.0:
   resolved "https://registry.yarnpkg.com/reg-gh-app-interface/-/reg-gh-app-interface-1.3.0.tgz#903fac5f9b18c098de3368634d2d0f6f6a1e02eb"
   integrity sha512-p3AXRqXTuBUlud8V7WlyrKE408prM7/TAWXLhcer0492Grhj3K1SzI/v7qadd7gtxTochZsvScL46vIaZB2icg==
 
-reg-keygen-git-hash-plugin@0.10.16:
-  version "0.10.16"
-  resolved "https://registry.yarnpkg.com/reg-keygen-git-hash-plugin/-/reg-keygen-git-hash-plugin-0.10.16.tgz#80ad60b2a5957c51b0766a815bec7f2a27a3adff"
-  integrity sha512-N3ma/KICzzyNOAn6GTjmMorAUntdBr3wsucEeMt/ts/KdMuzgyr9kuxamjVCA/n+/Lc/uOq8MnhxdKRSFUbodg==
+reg-keygen-git-hash-plugin@^0.10.16:
+  version "0.10.17"
+  resolved "https://registry.yarnpkg.com/reg-keygen-git-hash-plugin/-/reg-keygen-git-hash-plugin-0.10.17.tgz#3b2421691bac5be1737f9f88508e530805aab46d"
+  integrity sha512-IfodUgZ7WT1zqCRJhiDlHWK1ZWRRbjUqjaXtIb6JY5owkiU/BoMjChVwF3MfBmlLEFsxKAYtdRdMiWi0rTp9sg==
   dependencies:
-    reg-suit-util "^0.10.16"
+    reg-suit-util "^0.10.17"
     shell-escape "^0.2.0"
 
-reg-notify-github-plugin@0.10.16:
-  version "0.10.16"
-  resolved "https://registry.yarnpkg.com/reg-notify-github-plugin/-/reg-notify-github-plugin-0.10.16.tgz#aec821c179807f9f69156560c75fb396d7e78622"
-  integrity sha512-uZ4E+6ci7deE64OCw6Pt8D6CdIfxFWNap8hAsNlBDgTOEA2wrAz2mqDI9Q2ltU8P2EP/+5+tys8Qr77D1RSWhg==
+reg-notify-github-plugin@^0.10.16:
+  version "0.10.17"
+  resolved "https://registry.yarnpkg.com/reg-notify-github-plugin/-/reg-notify-github-plugin-0.10.17.tgz#45f2e4d17d343e8c0e9123be624fdfc09707779a"
+  integrity sha512-iWyyB4FXLovfVIHIAp5FAiN2HAfOlUKvALZfcLipvV+QrRsuWdItYy0BEM4toV1XtpqlZU8Q/OCd/IyB0fF9BQ==
   dependencies:
     open "^8.0.0"
     reg-gh-app-interface "^1.2.0"
-    reg-suit-util "^0.10.16"
+    reg-suit-util "^0.10.17"
     request "^2.88.2"
     request-promise "^4.2.6"
     tiny-commit-walker "^1.1.2"
 
-reg-publish-s3-plugin@0.10.16:
-  version "0.10.16"
-  resolved "https://registry.yarnpkg.com/reg-publish-s3-plugin/-/reg-publish-s3-plugin-0.10.16.tgz#34c5492f03e3103ffbbafea1c84fd69bdc440324"
-  integrity sha512-+31Lf0o4cPlOskmtOy8nt783r2c6JSQfWmOxwKg733gpzNL8PLaD5zSdrvQO7qmTHnqNvan9uRnhPbrKbokvmA==
+reg-publish-s3-plugin@^0.10.16:
+  version "0.10.17"
+  resolved "https://registry.yarnpkg.com/reg-publish-s3-plugin/-/reg-publish-s3-plugin-0.10.17.tgz#ed899a15869614c4ea17db88a58628c980fae754"
+  integrity sha512-nxIg/DO582cZ1G9x/i0SV6tDy8Xo4HASR3XyNo7MfR/zBlzrc8z5KiwydIFK/fEg+IsFW0en4ZqPSx9ci/Vnhg==
   dependencies:
     aws-sdk "^2.755.0"
     mkdirp "^1.0.4"
-    reg-suit-util "^0.10.16"
+    reg-suit-util "^0.10.17"
     uuid "^8.3.0"
 
 reg-suit-core@^0.10.16:

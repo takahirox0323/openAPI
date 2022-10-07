@@ -8,3 +8,4 @@ build/
 dist/
 node_modules/
 .secret-*.reg
+.reg

@@ -8,13 +8,10 @@
     "build": "webpack --mode=production",
     "test": "jest",
     "lint": "eslint src",
-    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "ci:vrt": "reg-suit run",
-    "ci:storybook-generate": "build-storybook -c .storybook -o dist-storybook -s public",
-    "ci:storycap": "storycap --serverTimeout 60000 --captureTimeout 10000 --serverCmd 'npx http-server dist-storybook --ci -p 9009' http://localhost:9009",
-    "storybooks": "start-storybook -p 6006 -c .storybook",
-    "screenshot": "storycap -C puppeteer --serverCmd \"start-storybook -p 6006\" http://localhost:6006 --serverTimeout 60000"
+    "storycap": "storycap --serverCmd \"yarn run storybook\" http://localhost:6006 --serverTimeout 60000",
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "regression": "reg-suit run"
   },
   "keywords": [],
   "author": "",
