@@ -7,4 +7,4 @@ config.ts
 build/
 dist/
 node_modules/
-.secret-*
+.secret-*.reg

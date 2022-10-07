@@ -149,14 +149,14 @@ function SwipeableTemporaryDrawer(props) {
 
   return (
     <div>
-      <SwipeableDrawer
+      {/* <SwipeableDrawer
         anchor={"left"}
         open={props.isOpen}
         onClose={toggleDrawer()}
         onOpen={toggleDrawer()}
       >
         {list()}
-      </SwipeableDrawer>
+      </SwipeableDrawer> */}
     </div>
   );
 }
