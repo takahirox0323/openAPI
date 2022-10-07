@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint src",
     "build-storybook": "build-storybook",
-    "storycap": "storycap --serverCmd \"yarn run storybook\" http://localhost:6006 --serverTimeout 60000",
+    "storycap": "storycap --serverCmd \"yarn run storybook\" http://localhost:6007 --serverTimeout 60000",
     "storybook": "start-storybook -p 6006 -c .storybook",
     "regression": "reg-suit run"
   },
