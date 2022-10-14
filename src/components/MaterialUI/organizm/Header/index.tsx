@@ -51,7 +51,7 @@ export const ButtonAppBar = (props) => {
   );
   return (
     <Box>
-      <AppBar position="fixed" sx={{ background: "black" }}>
+      <AppBar position="fixed" sx={{ background: "blue" }}>
         <Toolbar>
           <IconButton
             size="large"
